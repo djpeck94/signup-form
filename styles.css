@@ -1,6 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
 .container {
   display: flex;
-  background-color: honeydew;
+  background-color: #f9fafb;
 }
 
 .picture {
@@ -19,11 +73,14 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .form > * {
   grid-area: auto;
   display: grid;
+  margin: 5px;
+  padding: 5px, 2px;
 }
 
 .form h2 {
