@@ -16,17 +16,26 @@
   align-items: left;
   background-color: white;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 5px;
 }
 
-.form-item {
+.form > * {
+  grid-area: auto;
+  display: grid;
+}
+
+.form h2 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+/* .form-item {
   color: red;
   display: grid;
   grid-column: 1 / 3;
   margin: 10px;
-}
+} */
 
 .content {
   align-items: left;
