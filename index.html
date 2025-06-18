@@ -18,38 +18,54 @@
       </div>
 
       <div class="content">
-        <p>
+        <p class="paragraph">
           This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up now
+          this in your life to help you realize your deepest dreams.
+        </p>
+        <p class="paragraph">
+          Sign up
+          <em>now</em>
           to get started.
         </p>
-        <p>You know you want to.</p>
+        <p class="paragraph">You <em>know</em> you want to.</p>
 
         <form class="form" action="https://example.com/submit" method="POST">
-          <h2>Let's do this!</h2>
+          <h2 class="form-header">Let's do this!</h2>
 
-          <label for="first_name">First Name:</label>
-          <input type="text" id="first_name" name="first_name" required />
+          <div class="form-item">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required />
+          </div>
 
-          <label for="last_name">Last Name:</label>
-          <input type="text" id="last_name" name="last_name" required />
+          <div class="form-item">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required />
+          </div>
 
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email" required />
+          <div class="form-item">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required />
+          </div>
 
-          <label for="phone_num">Phone Number:</label>
-          <input type="text" id="phone_num" name="phone_num" required />
+          <div class="form-item">
+            <label for="phone_num">Phone Number:</label>
+            <input type="text" id="phone_num" name="phone_num" required />
+          </div>
 
-          <label for="password">Password:</label>
-          <input type="text" id="password" name="password" required />
+          <div class="form-item">
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" required />
+          </div>
 
-          <label for="confirm_password">Confirm Password:</label>
-          <input
-            type="text"
-            id="confirm_password"
-            name="confirm_password"
-            required
-          />
+          <div class="form-item">
+            <label for="confirm_password">Confirm Password:</label>
+            <input
+              type="text"
+              id="confirm_password"
+              name="confirm_password"
+              required
+            />
+          </div>
 
           <button type="submit" class="button">Create Account</button>
         </form>
