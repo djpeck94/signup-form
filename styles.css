@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  background-color: honeydew;
+}
+
+.picture {
+  align-items: left;
+}
+
+.paragraph {
+  align-items: left;
+}
+
+.form {
+  align-items: left;
+  background-color: white;
+}
+
+.content {
+  align-items: left;
+  flex: 1;
+}
+.button {
+  background-color: green;
+  color: white;
+}
