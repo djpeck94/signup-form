@@ -69,10 +69,11 @@ end of reset
   height: 100vh;
 }
 
-.picture {
+/*not used*/
+/* .picture {
   align-items: left;
   height: 100%;
-}
+} */
 
 .paragraph {
   align-items: left;
@@ -107,12 +108,13 @@ end of reset
 .form > * {
   grid-area: auto;
   display: grid;
-  margin: 5px;
-  padding: 5px, 2px;
+  margin: 0 5%;
+  padding: 5px 2px;
 }
 
-.form h2 {
-  grid-area: 1 / 1 / 2 / 3;
+.form-header {
+  /* grid-area: 1 / 1 / 2 / 3; */
+  grid-column: span 2;
 }
 
 /* .form-item {
@@ -126,7 +128,8 @@ end of reset
   align-items: left;
 }
 .button {
-  background-color: green;
+  background-color: #596d48;
   color: white;
   margin: 5%;
+  padding: 5px 45px;
 }
