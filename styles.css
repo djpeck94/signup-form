@@ -12,6 +12,7 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  background-color: #f9fafb;
 }
 /* 6. Improve media defaults */
 img,
@@ -52,18 +53,45 @@ h6 {
   text-wrap: balance;
 }
 
+/*
+*****************
+*****************
+*****************
+end of reset
+*****************
+*****************
+*****************
+*/
+
 .container {
   display: flex;
-  background-color: #f9fafb;
+  /* background-color: #f9fafb; */
+  height: 100vh;
 }
 
 .picture {
   align-items: left;
+  height: 100%;
 }
 
 .paragraph {
   align-items: left;
   font-weight: bold;
+  width: 70%;
+  margin-left: 5%;
+}
+
+#first-paragraph {
+  margin-top: 15%;
+}
+
+#last-paragraph {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#log-in-paragraph {
+  margin-top: 5%;
 }
 
 .form {
@@ -71,7 +99,7 @@ h6 {
   background-color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 15px;
   padding: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
@@ -100,4 +128,5 @@ h6 {
 .button {
   background-color: green;
   color: white;
+  margin: 5%;
 }

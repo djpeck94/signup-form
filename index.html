@@ -8,17 +8,15 @@
   </head>
   <body>
     <div class="container">
-      <div class="picture">
-        <img
-          src="./leaf-background.avif"
-          alt="Leaf Background"
-          height="400"
-          width="auto"
-        />
-      </div>
+      <img
+        src="./leaf-background.avif"
+        alt="Leaf Background"
+        height="100%"
+        width="auto"
+      />
 
       <div class="content">
-        <p class="paragraph">
+        <p class="paragraph" id="first-paragraph">
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams.
         </p>
@@ -27,7 +25,9 @@
           <em>now</em>
           to get started.
         </p>
-        <p class="paragraph">You <em>know</em> you want to.</p>
+        <p class="paragraph" id="last-paragraph">
+          You <em>know</em> you want to.
+        </p>
 
         <form class="form" action="https://example.com/submit" method="POST">
           <h2 class="form-header">Let's do this!</h2>
@@ -67,10 +67,12 @@
             />
           </div>
 
-          <button type="submit" class="button">Create Account</button>
+          <!-- <button type="submit" class="button">Create Account</button> -->
         </form>
-
-        <p>Already have an account? Log in</p>
+        <button type="submit" class="button">Create Account</button>
+        <p class="paragraph" id="last-paragraph">
+          Already have an account? Log in
+        </p>
       </div>
     </div>
   </body>
