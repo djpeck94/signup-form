@@ -92,7 +92,7 @@ end of reset
 }
 
 #log-in-paragraph {
-  margin-top: 5%;
+  margin: 5%;
 }
 
 .form {
@@ -102,7 +102,7 @@ end of reset
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   padding: 5px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .form > * {
@@ -115,6 +115,7 @@ end of reset
 .form-header {
   /* grid-area: 1 / 1 / 2 / 3; */
   grid-column: span 2;
+  margin: 0 15px;
 }
 
 /* .form-item {
@@ -130,6 +131,21 @@ end of reset
 .button {
   background-color: #596d48;
   color: white;
-  margin: 5%;
+  margin: 15px;
   padding: 5px 45px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.05s ease-in-out;
+}
+
+.button:hover {
+  background-color: #4a5b3c;
+}
+
+.button:active {
+  background-color: #3d4a2f;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
 }
